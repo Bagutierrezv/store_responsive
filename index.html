@@ -1,35 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cabañas Bahareque</title>
 </head>
+
 <body>
-    <!--Menu-->
+    <!--SECCION DE MENU DE NAVEGACION-->
 
-    <!--Filtro busqueda-->
+    <!--Navbar-->
+    <section class="navegacion">
+        <nav>
+            <div class="identidad">
+                <i class="fa-solid fa-house-chimney"></i>
+                <h4>Cabañas Bahareque</h4>
+            </div>
+            <div class="menu-burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
 
-    <!--Cards-->
-    <section class="galeria">
-        <div class="card">
-            <div class="img-card">
-                <img src="./assets/img/cabaña_1.jpg" alt="cabaña_1">
-            </div>
-            <div class="text-card">
-            </div>
-            <button>Arrendar</button>
-        </div>
+        <!--Opciones-->
+        <aside>
+            <menu>
+                <p>Inicio</p>
+                <p>Cabañas</p>
+                <p>Quienes somos</p>
+                <p>Contactanos</p>
+            </menu>
+        </aside>
 
     </section>
-    <!--Paginacion-->
 
+    <!--SECCION DE FILTROS DE BUSQUEDA-->
+    <!--Buscador-->
+
+    <section class="search">
+        <label for="search">Ordenar por:</label>
+        <select name="search" id="carlist">
+            <option value="tipos">Tipos de Cabañas</option>
+            <option value="tipos">Precio</option>
+        </select>
+    </section>
+
+    <!--SECCION PRINCIPAL-->
+
+    <main>
+        <!--Cards-->
+        <section class="galeria">
+
+            <div class="card">
+                <div class="img-card">
+                    <img src="./assets/img/cabaña_1.jpg" alt="cabaña_1">
+                </div>
+                <div class="text-card">
+                    <h4>Cabaña "El Vitrinal"</h4>
+                </div>
+                <button>Arrendar</button>
+            </div>
+            
+        </section>
+
+        <!--Paginacion-->
+        <section class="paginacion">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+        </section>
+
+    </main>
+
+    <!--SECCION PIE DE PAGINA-->
     <!--Footer-->
+    <footer>
+        <div class="iconos-footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="text-footer">
+            Todos los derechos reservados
+        </div>
+    </footer>
 
 </body>
+
 </html>

@@ -6,3 +6,125 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
 }
+
+body{
+    display: grid;
+    grid-template-areas: 
+    'navegacion'
+    'search'
+    'galeria'
+    'footer';
+    grid-template-rows: auto 15% auto 8%;
+    height: 100vh;
+}
+
+/*SECCION DE MENU DE NAVEGACION*/
+.navegacion{
+    grid-area: navegacion;
+    background-color: #9e4c00;
+    color: #fff;
+    padding: 1rem 1.5rem;
+
+    border: 2px solid #f71cff;
+}
+
+.identidad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.identidad h4{
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+menu{
+    display: none;
+}
+
+/*SECCION DE FILTROS DE BUSQUEDA*/
+.search{
+    grid-area: search;
+    background-color: #ffe7c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #1c6bff;
+}
+
+select{
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0.5rem 0rem 0rem;
+}
+
+label{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/*SECCION PRINCIPAL*/
+main{
+    grid-area: galeria;
+
+    border: 2px solid #1cff2f;
+}
+
+.galeria{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    width: auto;
+
+    border: 2px solid #ed23ff;
+}
+
+/*.img-card img{
+    width: 22rem;
+}*/
+
+.text-card {
+    padding: 1rem;
+    color: #2b2b2b;
+    text-align: center;
+}
+
+.text-card > h4{
+    padding-bottom: 0.5rem;
+}
+
+.card > button{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color:#9e4c00;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+
+/*SECCION PIE DE PAGINA*/
+footer{
+    grid-area: footer;
+
+    border: 2px solid #ff1c1c;
+}
