@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
 }
-
 body{
     display: grid;
     grid-template-areas: 
@@ -17,37 +16,29 @@ body{
     grid-template-rows: 10% 15% auto 12%;
     height: 100vh;
 }
-
-/*SECCION DE MENU DE NAVEGACION*/
 .navegacion{
     grid-area: navegacion;
     background-color: #d66800;
     color: #fff;
     padding: 1.5rem;
 }
-
 .identidad{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .identidad h4{
     font-weight: 500;
     margin-left: 1rem;
 }
-
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 menu{
     display: none;
 }
-
-/*SECCION DE FILTROS DE BUSQUEDA*/
 .search{
     grid-area: search;
     background-color: #ffe7c4;
@@ -56,7 +47,6 @@ menu{
     justify-content: center;
     align-items: center;
 }
-
 select{
     width: 85%;
     border: none;
@@ -64,14 +54,11 @@ select{
     padding: 0.3rem;
     margin: 0.5rem 0rem 0rem;
 }
-
 label{
     font-size: 0.9rem;
     font-weight: 600;
     color: #2b2b2b;
 }
-
-/*SECCION PRINCIPAL*/
 main{
     grid-area: galeria;
     display: flex;
@@ -79,15 +66,12 @@ main{
     justify-content: center;
     align-items: center;
 }
-
 .galeria{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*flex-wrap: wrap;*/
 }
-
 .card-mobile, .card-tablet, .card-desk{
     background-color: #ff902923;
     border-bottom-left-radius: 5px;
@@ -100,13 +84,11 @@ main{
     width: auto;
     border: 2px solid #ff9129;
 }
-
 .text-card {
     padding: 0.8rem;
     color: #474747;
     text-align: center;
 }
-
 button{
     margin-bottom: 0.5rem;
     padding: 0.5rem;
@@ -115,15 +97,12 @@ button{
     color: #ffffff;
     border-radius: 10px;
 }
-
 .card-tablet, .card-desk{
     display: none;
 }
-
 .paginacion{
     margin: 0.5rem 0rem 2rem;
 }
-
 .paginacion a{
     float: left;
     padding: 0.4rem 0.5rem;
@@ -132,13 +111,10 @@ button{
     border: 1px solid #ff9129;
     border-radius: 5px;
 }
-
 .paginacion a.active{
     background-color: #ff9129;
     color: #fff;
 }
-
-/*SECCION PIE DE PAGINA*/
 footer{
     grid-area: footer;
     background-color: #d66800;
@@ -153,6 +129,7 @@ footer{
 .iconos-footer i{
     margin: 0.3rem;
 }
+
 @media (width >= 576px) {
     body{
         display: grid;
@@ -161,7 +138,7 @@ footer{
         'search galeria'
         'footer footer';
         grid-template-columns: 20% auto;
-        grid-template-rows: 10% auto 12%;*/
+        grid-template-rows: 10% auto 12%;
         height: 100vh;
     }
     .menu-burger{
